@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".ListaActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textStyle="italic|bold"
+        android:textColor="@color/laranja"
+        android:fontFamily="serif-monospace"
+        android:textSize="14pt"
+        android:gravity="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btnNovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novo"
+            android:textColor="@color/branco"
+            android:backgroundTint="@color/laranja"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/btnOrdemAsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A..Z"
+            android:textColor="@color/branco"
+            android:backgroundTint="@color/laranja2"
+            android:layout_toEndOf="@id/btnNovo"
+            android:layout_marginEnd="0dp"/>
+
+        <Button
+            android:id="@+id/btnOrdemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z..A"
+            android:textColor="@color/branco"
+            android:backgroundTint="@color/laranja2"
+            android:layout_toEndOf="@id/btnOrdemAsc"
+            android:layout_marginEnd="5dp"/>
+
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:textColor="@color/branco"
+            android:backgroundTint="@color/cinzento_escuro"
+            android:layout_toEndOf="@id/btnOrdemDesc"
+            android:layout_marginStart="1dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listContact"/>
+
+</LinearLayout>

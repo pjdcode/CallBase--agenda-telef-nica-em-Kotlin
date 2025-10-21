@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".PinActivity"
+android:orientation="vertical"
+android:gravity="center"
+android:background="@color/cinzento_claro"
+android:padding="32dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/titulo"
+    android:textStyle="italic|bold"
+    android:textColor="@color/laranja"
+    android:fontFamily="serif-monospace"
+    android:textSize="14pt"
+    android:layout_marginBottom="60dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    />
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="PIN atual"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@color/cinzento_escuro"/>
+
+<EditText
+    android:id="@+id/editPinAtual"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:hint="****"
+    android:inputType="numberPassword"
+    android:gravity="center"
+    android:textSize="20sp"
+    android:background="@drawable/edittext_pin_bg"
+    android:backgroundTint="#51211033"
+    android:textColor="@color/cinzento_escuro"
+    android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Novo PIN"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/cinzento_escuro"/>
+
+    <EditText
+        android:id="@+id/editPinNovo1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="****"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_pin_bg"
+        android:textColor="@color/cinzento_escuro"
+        android:layout_marginBottom="24dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirma o PIN"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/cinzento_escuro"/>
+
+    <EditText
+        android:id="@+id/editPinNovo2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="****"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/edittext_pin_bg"
+        android:textColor="@color/cinzento_escuro"
+        android:layout_marginBottom="24dp" />
+
+<Button
+    android:id="@+id/btnConfirmar"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Alterar PIN"
+    android:textSize="18sp"
+    android:textColor="@color/branco"
+    android:backgroundTint="@color/laranja" />
+
+<Button
+    android:id="@+id/btnVoltar"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="Cancelar"
+    android:textSize="18sp"
+    android:layout_marginTop="20sp"
+    android:textColor="@color/branco"
+    android:backgroundTint="@color/cinzento_escuro" />
+
+</LinearLayout>

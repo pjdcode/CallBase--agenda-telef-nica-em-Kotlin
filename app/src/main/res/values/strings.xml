@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TFINAL_PauloDomingues</string>
+    <string name="titulo">CallBase</string>
+    <string name="descricao">Esta aplicação foi desenvolvida em Kotlin e permite gerir uma lista telefónica de forma simples e intuitiva.\n
+O acesso é protegido por um PIN numérico, que pode ser alterado pelo utilizador a qualquer momento a partir do ecrã de autenticação.\n\nAo editar um contacto, é possível atualizar os dados, eliminar o contacto ou iniciar uma chamada telefónica, desde que o número seja válido.
+Todos os dados — incluindo os contactos e o PIN — são armazenados de forma local no dispositivo, através de Shared Preferences, garantindo a sua persistência mesmo após o encerramento da aplicação. </string>
+    <string name="autor">Paulo Domingues</string>
+    <string name="campo_obrigatorio">Campo obrigatório</string>
+
+</resources>

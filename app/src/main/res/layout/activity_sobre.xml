@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SobreActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:gravity="center"
+        android:textSize="16pt"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="casual"
+        android:minWidth="200dp"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descricao"
+        android:gravity="fill_horizontal"
+        android:textSize="11sp"
+        android:layout_marginHorizontal="40dp"
+        android:minWidth="200dp"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autoavaliação: 10/10"
+        android:textStyle="bold"
+        android:gravity="fill_horizontal"
+        android:textSize="11sp"
+        android:layout_marginHorizontal="40dp"
+        android:minWidth="200dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aplicação desenvolvida por"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:fontFamily="casual"
+        android:minWidth="200dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/autor"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="10dp"
+        android:fontFamily="casual"
+        android:minWidth="200dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/branco"
+        android:backgroundTint="@color/laranja"
+        android:width="120dp"
+        android:text="Voltar"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/btnAlterarPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/cinzento_escuro"
+        android:backgroundTint="@color/laranja"
+        android:width="120dp"
+        android:text="Alterar PIN"/>
+
+
+</LinearLayout>

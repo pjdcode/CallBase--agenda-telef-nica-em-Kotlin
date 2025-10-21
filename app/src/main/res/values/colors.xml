@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="preto">#FF000000</color>
+    <color name="laranja">#FF9800</color>
+    <color name="laranja2">#AD704A</color>
+    <color name="cinzento_claro">#b4b4b4</color>
+    <color name="cinzento_escuro">#616161</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="verde">#09CC09</color>
+</resources>
