@@ -44,7 +44,7 @@ class ContactoActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             if (binding.editTelefone.text.toString().isEmpty()) {
-                binding.editNome.error = "@string/campo_obrigatorio"
+                binding.editTelefone.error = "@string/campo_obrigatorio"
                 return@setOnClickListener
             }
             val intent = Intent(this, ListaActivity::class.java)

@@ -8,6 +8,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginHorizontal="35dp"
+    android:paddingHorizontal="20dp"
     tools:context=".ContactoActivity">
 
     <TextView

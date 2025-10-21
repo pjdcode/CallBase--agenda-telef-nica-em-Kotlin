@@ -16,6 +16,7 @@ import com.example.tfinal_paulodomingues.databinding.ActivityListaBinding
 class ListaActivity : AppCompatActivity() {
     private val binding by lazy { ActivityListaBinding.inflate(layoutInflater) }  // para binding de elementos
     private lateinit var result: ActivityResultLauncher<Intent>
+    var listaTelefonica = ArrayList<Contacto>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,7 +29,7 @@ class ListaActivity : AppCompatActivity() {
         }
 
         //val listaTelefonica = ArrayList<Contacto>()
-        var listaTelefonica = carregarLista(this)
+        listaTelefonica = carregarLista(this)
         var posLista = -1
         val adapter = ArrayAdapter(
             this,
@@ -52,9 +53,11 @@ class ListaActivity : AppCompatActivity() {
                     }
                 }
                 100 -> {   // eliminar
-                    listaTelefonica.removeAt(posLista)
-                    adapter.notifyDataSetChanged()
-                    posLista = -1
+                    if (posLista != -1) {
+                        listaTelefonica.removeAt(posLista)
+                        adapter.notifyDataSetChanged()
+                        posLista = -1
+                    }
                 }
                 RESULT_FIRST_USER -> {  // novo
                     if (it.data != null) {
@@ -86,7 +89,6 @@ class ListaActivity : AppCompatActivity() {
 
         // -----------------------------------------------------------------------------------
         binding.btnVoltar.setOnClickListener {
-            guardarLista(this, listaTelefonica)
             finish()
         }
 
@@ -110,7 +112,6 @@ class ListaActivity : AppCompatActivity() {
             intent.putExtra("morada", listaTelefonica[position].morada)
             result.launch(intent)
         }
-
 
     }
 
@@ -154,5 +155,9 @@ class ListaActivity : AppCompatActivity() {
         return lista
     }
 
+    override fun onStop() {
+        guardarLista(this, listaTelefonica)
+        super.onStop()
+    }
 
 }
